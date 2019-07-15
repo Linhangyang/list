@@ -11,6 +11,7 @@
     <modules>
         <module>first</module>
         <module>two</module>
+        <module>alibaba-sentinel</module>
     </modules>
 
 

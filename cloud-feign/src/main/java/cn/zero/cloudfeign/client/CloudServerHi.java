@@ -9,5 +9,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface CloudServerHi {
 
     @RequestMapping(value = "/hi", method = RequestMethod.GET)
-    String findCloudServerHi(@RequestParam(value = "name") String name);
+    String findCloudServerHi(@RequestParam(value = "name", defaultValue = "zero") String name);
+
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    String findCloudServerHello(@RequestParam(value = "name", defaultValue = "zero") String name);
 }

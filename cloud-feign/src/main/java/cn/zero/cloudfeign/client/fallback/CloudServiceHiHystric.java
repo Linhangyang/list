@@ -14,6 +14,11 @@ public class CloudServiceHiHystric implements CloudServerHi {
 
     @Override
     public String findCloudServerHi(String name) {
-        return "sorry, you are fail," + name;
+        return "hi, sorry, you are fail," + name;
+    }
+
+    @Override
+    public String findCloudServerHello(String name) {
+        return "hello, sorry, you are fail," + name;
     }
 }

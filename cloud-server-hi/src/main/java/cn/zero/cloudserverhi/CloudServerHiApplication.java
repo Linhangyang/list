@@ -28,4 +28,8 @@ public class CloudServerHiApplication {
         return "hi " + name + " ,i am from port:" + port;
     }
 
+    @RequestMapping("/hello")
+    public String hello(@RequestParam(value = "name", defaultValue = "zero") String name) {
+        return "hello " + name + " ,i am from port:" + port;
+    }
 }

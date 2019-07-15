@@ -13,7 +13,7 @@ public class HiController {
     private CloudServerHi cloudServerHi;
 
     @GetMapping(value = "/hi")
-    public String sayHi(@RequestParam String name) {
-        return cloudServerHi.findCloudServerHi(name);
+    public String sayHi(@RequestParam(value = "name", defaultValue = "zero") String name) {
+        return cloudServerHi.findCloudServerHello(name);
     }
 }
